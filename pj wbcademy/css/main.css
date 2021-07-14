@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+/* container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* code header */
+.header {
+  background: url('../img/header.png') center / cover;
+  width: 100%;
+  min-height: 667px;
+  height: 100vh;
+  /* определяем модель флексов для блока header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.header>h1 {
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 130%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.header>p {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+.header-arrow {
+  background-image: url('../img/icon-down.png');
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* main portfolio */
+.portfolio-cart-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio {
+  background-color: #E0E0E0;
+}
+
+.portfolio-tittle {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 70px;
+  margin: 0 auto;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.cart {
+  padding: 20px 30px;
+  background-color: #fff;
+  width: calc(50% - 20px);
+  font-weight: 700;
+  box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+}
+
+.cart>span {
+  font-weight: 400;
+}
+
+.cart:nth-child(1),
+.cart:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.cart:nth-child(3),
+.cart:nth-child(4) {
+  margin-bottom: 115px;
+}
+
+.cart img {
+  width: 100%;
+}
+.cart:hover {
+  transform: translateY(-15px);
+  transition: transform 0.5s ease-in;
+}
+.cart-link {
+  text-decoration: none;
+  display: block;
+}
+.cart-link:hover {
+  color: rgba(39, 91, 236);
+  
+}
+.cart-link:visited {
+  color: rgba(39, 91, 236);
+}
+/* podval footer */
+.footer {
+  background-color: #1E4776;
+  padding-top: 45px;
+  padding-bottom: 108px;
+  color: #fff;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  color: #7E9EC9;
+  max-width: 350px;
+  flex-grow: 1;
+}
+
+.footer-copyright p {
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.footer-copyright-name {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+}
+
+.footer-soc-pic {
+  display: flex;
+  align-items: center;
+}
+
+.footer-soc-pic img {
+  padding-right: 35px;
+}
+
+.footer-soc p {
+  line-height: 130%;
+}
+
+.footer-soc {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 272px;
+  height: 21px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  background: none;
+  padding: 15px 30px;
+  font-size: 16px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.3;
+  color: #7E9EC9;
+  width: 350px;
+}
+
+.footer-button-block {
+  max-width: 350px;
+  flex-grow: 1;
+}
+
+/* project */
+.projetct-tittle {
+  font-size: 46px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 150%;
+}
+.project-image {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+.project-desc {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 150%;
+  font-style: 16px;
+  font-weight: 400;
+}
+.project-desc-text > a {
+  text-decoration: none;
+  color: #275BEC;
+}
+.project-desc-text:nth-child(2) {
+  margin-bottom: 60px;
+}
+.project-btn > a {
+  background: none;
+  border: 2px solid #275BEC;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 16px;
+  color: #275BEC;
+}
+.project-btn a {
+  background: none;
+  color: #275BEC;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+.project-btn a:hover {
+  background-color: #275BEC;
+  color: #fff;
+}
+.project-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
